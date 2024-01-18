@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Answer Reveal </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
 
+    h1 {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+    }
+
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var isCompatible = true;
+      var supportedBrowsers = ["Firefox", "Chrome", "Edge", "Safari", "Opera", "Brave", "Vivaldi", "DuckDuckGo"];
+      var currentBrowser = navigator.userAgent;
+
+      if (supportedBrowsers.every(function(browser) {
+        return currentBrowser.indexOf(browser) === -1;
+      })) {
+        isCompatible = false;
+      }
+
+      if (isCompatible) {
+        window.location.href = 'https://ibb.co/Qpc9XsM'; // Replace with your compatible link
+      } else {
+        var catImage = document.createElement('img');
+        catImage.src = 'https://iili.io/Jzr10cN.md.jpg'; // Replace with your cat image URL or path
+        document.body.appendChild(catImage);
+      }
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
