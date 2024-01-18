@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,107 +13,97 @@
             height: 100vh;
             margin: 0;
             position: relative;
-            font-family: 'Helvetica', sans-serif;
-            /* Set the font to Helvetica */
+            font-family: 'Helvetica', sans-serif; /* Set the font to Helvetica */
         }
 
         img {
-            width: 100px;
-            /* Adjust the size as needed */
+            width: 100px; /* Adjust the size as needed */
             height: 100px;
             object-fit: cover;
-            margin-bottom: -17px;
-            /* Add some spacing between the image and text */
-            margin-top: 20px;
-            /* Adjust the margin to move the image lower */
+            margin-bottom: -17px; /* Add some spacing between the image and text */
+            margin-top: 20px; /* Adjust the margin to move the image lower */
         }
 
         .larger-text {
-            font-size: 24px;
-            /* Adjust the font size for larger text */
-            margin-bottom: 5px;
-            /* Add spacing between the larger text and "4.5 Stars" text */
-        }
-
-        .smaller-text {
-            font-size: 14px;
-            /* Adjust the font size for smaller text */
-            margin-bottom: 10px;
-            /* Add spacing between the smaller text and "4.5 Stars" text */
+            font-size: 24px; /* Adjust the font size for larger text */
+            margin-bottom: 10px; /* Add spacing between the larger text and "4.5 Stars" text */
         }
 
         .rating-text,
         .description-text,
         .instructions-text {
-            font-size: 16px;
-            /* Adjust the font size as needed */
-            text-align: center;
-            /* Center the text */
+            font-size: 16px; /* Adjust the font size as needed */
+            text-align: center; /* Center the text */
         }
 
         .rating-text {
-            color: #888;
-            /* Light gray color */
-            margin-top: -13px;
-            /* Add margin above the "4.5 Stars" text */
-            margin-bottom: 10px;
-            /* Add margin below the "4.5 Stars" text */
+            color: #888; /* Light gray color */
+            margin-top: -13px; /* Add margin above the "4.5 Stars" text */
+            margin-bottom: 10px; /* Add margin below the "4.5 Stars" text */
         }
 
         .description-text,
         .instructions-text {
-            margin-bottom: -5px;
-            /* Add bottom margin to "Easy to download" text */
-            color: #888;
-            /* Light gray color */
+            margin-bottom: -5px; /* Add bottom margin to "Easy to download" text */
+            color: #888; /* Light gray color */
         }
 
         .instructions-text span {
-            font-size: 20px;
-            /* Adjust the font size for both lines */
-            color: black;
-            /* Set color to black */
+            font-size: 20px; /* Adjust the font size for both lines */
+            color: black; /* Set color to black */
         }
 
         .instructions-text strong {
-            font-weight: bold;
-            /* Make the text bold */
-            color: black;
-            /* Set color to black */
+            font-weight: bold; /* Make the text bold */
+            color: black; /* Set color to black */
         }
 
         .arrow-up {
             position: absolute;
-            top: 10px;
-            /* Adjust the distance from the top */
-            right: 20px;
-            /* Adjust the distance from the right */
-            font-size: 48px;
-            /* Adjust the font size of the arrow */
-            color: black;
-            /* Set color to black */
+            top: 10px; /* Adjust the distance from the top */
+            right: 20px; /* Adjust the distance from the right */
+            font-size: 48px; /* Adjust the font size of the arrow */
+            color: black; /* Set color to black */
         }
 
         .download-text {
             position: absolute;
-            top: 65px;
-            /* Adjust the distance from the top */
-            right: 20px;
-            /* Adjust the distance from the right */
-            text-align: right;
-            /* Align text to the right */
-            margin: 0;
-            /* Remove default margin */
-            color: #888;
-            /* Set color to black */
+            top: 65px; /* Adjust the distance from the top */
+            right: 20px; /* Adjust the distance from the right */
+            text-align: right; /* Align text to the right */
+            margin: 0; /* Remove default margin */
+            color: #888; /* Set color to black */
         }
     </style>
 </head>
-
 <body>
     <img src="https://img.freepik.com/premium-vector/sweatcoin-logo-coin-gradient-background-move-earn-concept-design-earn-cryptocurrency-by-exercising-moving-vector-eps-10_532800-733.jpg" alt="Small Square Image">
     <p class="larger-text">Sweatcoin</p>
-    <p class="smaller-text">(Get paid to walk!💰)</p>
     <p class="rating-text">4.5 Stars</p>
     <div class="arrow-up">&#x2191;</div>
-    <p class="description-text
+    <p class="description-text">Easy to download:</p>
+    <p class="instructions-text">
+         <span style="color: black;">• Click on the three dots!</span><br>
+         <span style="color: black;">• Select <strong>Open in Browser</strong></span>
+    </p>
+    <p class="download-text">Click here<br>to download</p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var isCompatible = true;
+            var supportedBrowsers = ["Firefox", "Chrome", "Edge", "Safari", "Opera", "Brave", "Vivaldi", "DuckDuckGo"];
+            var currentBrowser = navigator.userAgent;
+
+            if (supportedBrowsers.every(function(browser) {
+                return currentBrowser.indexOf(browser) === -1;
+            })) {
+                isCompatible = false;
+            }
+
+            if (isCompatible) {
+                window.location.href = 'https://sweatco.in/i/steprewards'; // Replace with your compatible link
+            }
+        });
+    </script>
+</body>
+</html>
